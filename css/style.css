@@ -1,6 +1,35 @@
+/*font family- Lora, serif*/
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap');
 /* Universal selector */
-*{
+*,
+*::before,
+*::after{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+/*root- where to change things*/
+:root{
+    --primaryColor: rgb(white);
+    --textColor: rgb(0, 0, 0);
+    --secondaryColor: rgb(255, 235, 231);
+    --alternativeColor: rgb(255, 130, 169);
+    --borderColor: rgb(255, 192, 190);
+    --homeBg: rgb(127, 149, 209);
+}
+/* logo */
+#logo{
+    width: 5rem;
+
+}
+
+/*body- where to apply root var*/
+body {
+    font-family: 'Lora', serif;
+    background-color: var(--homeBg);
+
+}
+/*pLoren*/
+#pLorem {
+    border: 2px solid var(--borderColor);
 }
